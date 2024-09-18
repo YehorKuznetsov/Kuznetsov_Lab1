@@ -6,12 +6,17 @@ int main() {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	int time;
-	cout << "Ââåä³òü ÷àñ: ";
+	cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ‡Ð°Ñ: ";
 	cin >> time;
-	if (time >= 6 && time <= 12) {
-		cout << "Öå ðàíîê";
+	if (time < 0 || time > 23) {
+		cout << "Error.\n";
 	}
-	else {
-		cout << "Öå íå ðàíîê";
+	else{
+		if (time >= 6 && time <= 12) {
+			cout << "Ð¦Ðµ Ñ€Ð°Ð½Ð¾Ðº";
+		}
+		else {
+			cout << "Ð¦Ðµ Ð½Ðµ Ñ€Ð°Ð½Ð¾Ðº";
+		}
 	}
 }
