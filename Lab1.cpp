@@ -9,7 +9,7 @@ int main() {
 	cout << "Введіть час: ";
 	cin >> time;
 	if (time < 0 || time > 23) {
-		cout << "Error.\n";
+		cout << "Error";
 	}
 	else{
 		if (time >= 6 && time <= 12) {
